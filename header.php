@@ -6,6 +6,11 @@
   <title>Crick Scores - Cricket Live Scores, Matches, Results and Upcoming</title>
   <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+  
+  <link rel="shortcut icon" href="../logoc.png" type="image/x-icon">
+  <link rel="icon" href="../logoc.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="120x120" href="../logoc.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../logoc.png" />
 
   <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/fonts/flat-icon/flaticon.css">
