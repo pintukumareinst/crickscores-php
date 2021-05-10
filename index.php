@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Crick Scores - Cricket Live Scores, Matches, Results and Upcoming</title>
   
-  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-  <link rel="icon" href="logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="logoc.png" type="image/x-icon">
+  <link rel="icon" href="logoc.png" type="image/x-icon">
 
-  <link rel="apple-touch-icon" sizes="120x120" href="logo.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="logo.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="logoc.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="logoc.png" />
   
   <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
