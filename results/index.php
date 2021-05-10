@@ -56,13 +56,13 @@ echo $u;
          for($i=$l;$i<$u;$i++) 
          {
 
-           if($i>$count-1)
+           if($i<$count-1)
            {
                       echo '<div class="card bg-info">
   <div class="card-body">
-   
+    <h5 class="text-danger"><?php echo "Match ID - ".$data->data[$i]->unique_id; ?></h5>
 
-    <h3 class="text-primary">No Data - Results are till previous page</h3>
+    <h3 class="text-primary"><?php echo $data->data[$i]->title; ?></h3>
   
           
   </div>
@@ -76,12 +76,11 @@ break;
 
 ?>
 
-
 <div class="card bg-info">
   <div class="card-body">
-    <h5 class="text-danger"><?php echo "Match ID - ".$data->data[$i]->unique_id; ?></h5>
+   
 
-    <h3 class="text-primary"><?php echo $data->data[$i]->title; ?></h3>
+    <h3 class="text-primary">No Data - Results are till previous page</h3>
   
           
   </div>
