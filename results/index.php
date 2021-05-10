@@ -34,8 +34,6 @@ $u=$page*5;
 $l=$u-5;
 date_default_timezone_set('Asia/Kolkata');
 
-echo $u;
-
 ?>
 
 
