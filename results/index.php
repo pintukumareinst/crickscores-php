@@ -54,9 +54,11 @@ date_default_timezone_set('Asia/Kolkata');
          for($i=$l;$i<$u;$i++) 
          {
 
-           if($i<$count-1)
+           if($i<$count)
            {
-                      echo '<div class="card bg-info">
+
+            ?>
+                      <div class="card bg-info">
   <div class="card-body">
     <h5 class="text-danger"><?php echo "Match ID - ".$data->data[$i]->unique_id; ?></h5>
 
@@ -64,9 +66,11 @@ date_default_timezone_set('Asia/Kolkata');
   
           
   </div>
-</div>';
-break;
-           }
+</div>
+
+<?php
+}
+
            else
            {
 
@@ -85,6 +89,7 @@ break;
 </div>
 
   <?php
+  break;
 }
 }
 $pl=$page-1;
