@@ -27,11 +27,14 @@ curl_close($ch);
 
 $count=count($data->data);
 
+
 $page=$_GET['page'];
 
 $u=$page*5;
 $l=$u-5;
 date_default_timezone_set('Asia/Kolkata');
+
+echo $u;
 
 ?>
 
@@ -49,10 +52,11 @@ date_default_timezone_set('Asia/Kolkata');
 
             <h6 class="title">Results<span class="title-style"></span></h6>
 
-  <?php
+  <?php  
+         for($i=$l;$i<$u;$i++) 
+         {
 
-
-           if($u>$count)
+           if($i>$count-1)
            {
                       echo '<div class="card bg-info">
   <div class="card-body">
@@ -63,9 +67,12 @@ date_default_timezone_set('Asia/Kolkata');
           
   </div>
 </div>';
+break;
            }
-      else     
-         for($i=$l;$i<$u;$i++) {
+           else
+           {
+
+
 
 ?>
 
@@ -81,6 +88,7 @@ date_default_timezone_set('Asia/Kolkata');
 </div>
 
   <?php
+}
 }
 $pl=$page-1;
 $pu=$page+1;
