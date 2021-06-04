@@ -58,7 +58,7 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-  <!--   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>Admin</title>
   </head>
@@ -100,19 +100,21 @@ else
 </nav>
  -->
 
-<!-- <div class="container mt-2">
-<form class="d-flex" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-  <input type="text" class="form-control me-2" name="link" placeholder="Enter link" required>
-  <button type="submit" class="btn btn-primary">Add</button>
-</form>
-</div> -->
-
-
+<div class="container-fluid mt-2">
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+
+  <input type="text" class="form-control" name="link" required>
+  <button type="submit" class="btn btn-primary">Add</button>
+   <input type="text" class="form-control" name="pin" required>
+</form>
+</div>
+
+
+<!-- <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
   <input type="text" name="link" required><br>
   <input type="text" name="pin" required>
   <button type="submit">A</button>
-</form>
+</form> -->
 
 
 
@@ -120,7 +122,7 @@ else
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-  <!--   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
