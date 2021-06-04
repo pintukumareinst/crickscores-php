@@ -53,22 +53,20 @@ preg_match('!ellipsis">.*?<!',$result,$t);
 preg_match('!https://a6.o-hentai.com/pool/pub/[^\s]*?x-image-process=style/m!',$result,$im);
 
 $p="";
-for($i=0;$i<strlen($t[0]);$i++)
+for($i=10;$i<strlen($t[0])-1;$i++)
 {
-  if($i>9 && $i!=strlen($t[0])-1)
     $p=$p.$t[0][$i];
 }
+$link="video.php?id=".$row['id'];
 
         ?>
 
         <div class="col" id="<?php echo str_replace(' ', "-", $p); ?>">
           <div class="card">
-            <a href="<?php echo "#"; ?>">
+            <a href="<?php echo $link; ?>">
               <img src="<?php echo $im[0]; ?>" alt="<?php echo $p; ?>" class="card-img-top" height="200">
             </a>
-          </div>
-          <?php if(strlen($p)<35) echo $p; else echo substr($p,0,32).'..'; ?>
-        </div>
+          </div><?php if(strlen($p)<35) echo $p; else echo substr($p,0,34).'..'; ?></div>
 
       <?php
       
